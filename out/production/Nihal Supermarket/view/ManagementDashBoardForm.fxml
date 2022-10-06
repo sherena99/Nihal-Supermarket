@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="managementDashBoardContext" prefHeight="572.0" prefWidth="735.0" styleClass="dashBoard" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagementDashBoardFormController">
+   <children>
+      <Label layoutX="139.0" layoutY="15.0" text="Management Dash Board">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="122.0" text="System Report">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="-1.0" layoutY="103.0" prefHeight="1.0" prefWidth="740.0" />
+      <Button layoutX="212.0" layoutY="163.0" mnemonicParsing="false" onAction="#incomeButtonOnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-radius: 25;" text="Income Report" />
+      <Button layoutX="212.0" layoutY="225.0" mnemonicParsing="false" onAction="#itemReportButtonOnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-radius: 25;" text="Item Report" />
+      <Label layoutX="309.0" layoutY="361.0" text="Manage Items">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="212.0" layoutY="285.0" mnemonicParsing="false" onAction="#customerIncomeButtonOnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-radius: 25;" text="Customer Wise Income" />
+      <JFXButton buttonType="RAISED" layoutX="623.0" layoutY="22.0" onAction="#goBackButtonOnAction" prefHeight="36.0" prefWidth="85.0" style="-fx-background-color: red;" text="Log Out" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Button layoutX="222.0" layoutY="409.0" mnemonicParsing="false" onAction="#manageItemButtonOnAction" prefHeight="44.0" prefWidth="295.0" style="-fx-background-radius: 25;" text="Manage Items" />
+      <Button cancelButton="true" layoutX="225.0" layoutY="499.0" mnemonicParsing="false" onAction="#createNewAccButtonOnAction" prefHeight="37.0" prefWidth="295.0" style="-fx-background-color: black; -fx-background-radius: 25;" text="Create New User Account" textFill="#fffbfb" />
+   </children>
+   <padding>
+      <Insets top="2.0" />
+   </padding>
+</AnchorPane>

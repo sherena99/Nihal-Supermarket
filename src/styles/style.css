@@ -1,0 +1,9 @@
+.background{
+    -fx-background-image: url(../assest/B-2.jpg);
+}
+.login {
+    -fx-background-image: url(../assest/B-1.jpg);
+}
+.dashBoard {
+    -fx-background-image: url(../assest/B-4.jpg);
+}

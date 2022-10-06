@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="orderModifyFormContext" prefHeight="640.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerCashier.OrderDeleteFormController">
+   <children>
+      <Label layoutX="138.0" layoutY="14.0" prefHeight="37.0" prefWidth="195.0" text="Order Modify Form">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderId" layoutX="40.0" layoutY="108.0" onAction="#searchOrderButtonOnAction" prefHeight="31.0" prefWidth="378.0" promptText="Order Id" />
+      <TextField fx:id="txtItemCode" layoutX="40.0" layoutY="165.0" prefHeight="31.0" prefWidth="378.0" promptText="Item Code" />
+      <TextField fx:id="txtOrderQty" layoutX="40.0" layoutY="229.0" prefHeight="31.0" prefWidth="378.0" promptText="Order Qty" />
+      <TextField fx:id="txtOrderDiscount" layoutX="40.0" layoutY="286.0" prefHeight="31.0" prefWidth="378.0" promptText="Discount" />
+      <Button layoutX="155.0" layoutY="353.0" mnemonicParsing="false" onAction="#modifyButtonOnAction" prefHeight="31.0" prefWidth="149.0" text="Modify" />
+      <TableView fx:id="tblOrderDetails" layoutX="68.0" layoutY="412.0" prefHeight="200.0" prefWidth="536.0">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="193.0" text="Item Code" />
+          <TableColumn fx:id="colOrderQty" prefWidth="174.0" text="Order Qty" />
+            <TableColumn fx:id="colOrderDiscount" prefWidth="174.0" text="Order Discount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

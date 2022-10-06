@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierLogInContext" prefHeight="541.0" prefWidth="508.0" style="-fx-background-color: #f9ca24;" styleClass="login" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierLogInFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="406.0" layoutY="30.0" onAction="#goBackButtonOnAction" prefHeight="31.0" prefWidth="46.0" style="-fx-background-color: red;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="149.0" layoutY="25.0" prefHeight="40.0" prefWidth="218.0" text="Cashier Login" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="65.0" layoutY="179.0" prefHeight="240.0" prefWidth="378.0" style="-fx-background-color: white;">
+         <children>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="31.0" layoutY="37.0" prefHeight="31.0" prefWidth="316.0" promptText="User Name" />
+            <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="31.0" layoutY="98.0" prefHeight="31.0" prefWidth="316.0" promptText="Password" />
+            <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="164.0" onAction="#logInButtonOnAction" prefHeight="39.0" prefWidth="316.0" style="-fx-background-color: black;" text="Log In" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Circle fill="WHITE" layoutX="258.0" layoutY="160.0" radius="43.0" stroke="#1b1b1b" strokeType="INSIDE" strokeWidth="2.0" />
+      <ImageView fitHeight="63.0" fitWidth="59.0" layoutX="228.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/login.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

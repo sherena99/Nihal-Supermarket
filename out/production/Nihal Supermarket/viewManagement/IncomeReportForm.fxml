@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="incomeReportContext" prefHeight="889.0" prefWidth="894.0" style="-fx-background-color: #95afc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportFormController">
+   <children>
+      <TableView fx:id="tblOrder" layoutX="79.0" layoutY="138.0" prefHeight="181.0" prefWidth="715.0">
+         <columns>
+            <TableColumn fx:id="colOrderId" prefWidth="144.0" text="Date" />
+            <TableColumn fx:id="colCustomerId" prefWidth="144.0" text="Orders" />
+            <TableColumn fx:id="colOrderDate" prefWidth="141.0" text="Order Time" />
+            <TableColumn fx:id="colOrderTime" prefWidth="143.0" text="Cost" />
+            <TableColumn fx:id="colCost" prefWidth="142.0" text="Income" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblOrder1" layoutX="80.0" layoutY="405.0" prefHeight="181.0" prefWidth="715.0">
+         <columns>
+            <TableColumn fx:id="colOrderId1" prefWidth="144.0" text="Month" />
+            <TableColumn fx:id="colCustomerId1" prefWidth="144.0" text="Order Count" />
+            <TableColumn fx:id="colOrderDate1" prefWidth="141.0" text="Cost" />
+            <TableColumn fx:id="colOrderTime1" prefWidth="143.0" text="Income" />
+            <TableColumn fx:id="colCost1" prefWidth="142.0" text="Average" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblOrder11" layoutX="81.0" layoutY="690.0" prefHeight="181.0" prefWidth="715.0">
+         <columns>
+            <TableColumn fx:id="colOrderId11" prefWidth="144.0" text="Year" />
+            <TableColumn fx:id="colCustomerId11" prefWidth="144.0" text="Total Orders" />
+            <TableColumn fx:id="colOrderDate11" prefWidth="141.0" text="Total Cost" />
+            <TableColumn fx:id="colOrderTime11" prefWidth="143.0" text="Total Income" />
+            <TableColumn fx:id="colCost11" prefWidth="142.0" text="Average" />
+         </columns>
+      </TableView>
+      <Label layoutX="320.0" prefHeight="58.0" prefWidth="302.0" text="Income Reports" textFill="#2c216f">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="342.0" prefHeight="45.0" prefWidth="169.0" text="Monthly Income" textFill="#08122c">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="390.0" layoutY="80.0" prefHeight="45.0" prefWidth="128.0" text="Daily Income" textFill="#282828">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="620.0" prefHeight="45.0" prefWidth="234.0" text="Annually Income" textFill="#08122c">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="325.0" prefHeight="8.0" prefWidth="880.0" />
+      <Separator layoutY="597.0" prefHeight="8.0" prefWidth="893.0" />
+      <TextField layoutX="579.0" layoutY="80.0" prefHeight="31.0" prefWidth="204.0" promptText="Search Day" />
+      <TextField layoutX="590.0" layoutY="627.0" prefHeight="31.0" prefWidth="204.0" promptText="Search Year" />
+      <TextField layoutX="590.0" layoutY="349.0" prefHeight="31.0" prefWidth="204.0" promptText="Search Month" />
+      <Separator layoutX="4.0" layoutY="64.0" prefHeight="1.0" prefWidth="893.0" />
+      <JFXButton buttonType="RAISED" layoutX="88.0" layoutY="14.0" onAction="#goBackButtonOnAction" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: Black;" text="&lt;&lt;&lt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

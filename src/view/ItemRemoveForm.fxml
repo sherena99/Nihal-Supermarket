@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemRemoveFormContext" prefHeight="507.0" prefWidth="527.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemRemoveFormController">
+   <children>
+      <Label layoutX="170.0" layoutY="33.0" text="Remove Item">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemCode" layoutX="45.0" layoutY="120.0" onAction="#searchCustomerOnAction" prefHeight="31.0" prefWidth="437.0" promptText="Item Code" />
+      <TextField fx:id="txtPackSize" layoutX="45.0" layoutY="254.0" prefHeight="31.0" prefWidth="437.0" promptText="Pack Size" />
+      <TextField fx:id="txtDescription" layoutX="45.0" layoutY="172.0" prefHeight="61.0" prefWidth="437.0" promptText="Description" />
+      <TextField fx:id="txtQtyOnHand" layoutX="45.0" layoutY="307.0" prefHeight="31.0" prefWidth="205.0" promptText="Qty On Hand" />
+      <TextField fx:id="txtUnitPrice" layoutX="45.0" layoutY="354.0" prefHeight="31.0" prefWidth="437.0" promptText="Unit Price" />
+      <JFXButton buttonType="RAISED" layoutX="431.0" layoutY="40.0" onAction="#cancelFormButtonOnAction" prefHeight="31.0" prefWidth="51.0" style="-fx-background-color: red;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="119.0" layoutY="415.0" onAction="#deleteItemButtonOnAction" prefHeight="38.0" prefWidth="291.0" style="-fx-background-color: #ee5253;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtDiscount" layoutX="277.0" layoutY="307.0" prefHeight="31.0" prefWidth="205.0" promptText="Discount" />
+   </children>
+</AnchorPane>

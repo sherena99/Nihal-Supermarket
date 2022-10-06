@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="firstPageContext" prefHeight="717.0" prefWidth="1039.0" style="-fx-background-color: #22a6b3;" styleClass="background" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirstPageFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="694.0" layoutY="536.0" onAction="#cashierLogInOnAction" prefHeight="57.0" prefWidth="310.0" style="-fx-background-color: #130f40; -fx-background-radius: 25;" text="Cashier Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="694.0" layoutY="606.0" onAction="#managementLogInOnAction" prefHeight="57.0" prefWidth="310.0" style="-fx-background-color: #130f40; -fx-background-radius: 25;" text="Management Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="54.0" layoutY="164.0" lineSpacing="1.0" prefHeight="73.0" prefWidth="495.0" text="Nihal Supermarket" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="246.0" text="The Best Place To Purchase Your All Stuffs " textFill="#ffffffca">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="605.0" layoutY="28.0" text="About" textFill="#ede6e6e5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="693.0" layoutY="28.0" text="Contact" textFill="#ede6e6e5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="801.0" layoutY="28.0" text="Users" textFill="#ede6e6e5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="895.0" layoutY="28.0" text="Customers" textFill="#ede6e6e5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

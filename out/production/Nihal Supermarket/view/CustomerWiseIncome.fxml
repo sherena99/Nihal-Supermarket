@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="customerWiseIncomeContext" prefHeight="510.0" prefWidth="753.0" style="-fx-background-color: #dff9fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerWiseIncomeController">
+   <children>
+      <TableView layoutX="41.0" layoutY="150.0" prefHeight="318.0" prefWidth="715.0">
+         <columns>
+            <TableColumn prefWidth="144.0" text="Customer Id" />
+            <TableColumn prefWidth="144.0" text="Customer Name" />
+            <TableColumn prefWidth="141.0" text="Total Orders" />
+            <TableColumn prefWidth="143.0" text="Total Purchases" />
+            <TableColumn prefWidth="142.0" text="Income" />
+         </columns>
+      </TableView>
+      <Label layoutX="203.0" layoutY="14.0" prefHeight="58.0" prefWidth="457.0" text="Customer wice Income" textFill="#2c216f">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField layoutX="552.0" layoutY="96.0" prefHeight="31.0" prefWidth="204.0" promptText="Search Date" />
+      <Separator layoutX="11.0" layoutY="77.0" prefHeight="7.0" prefWidth="801.0" />
+      <JFXButton buttonType="RAISED" layoutX="83.0" layoutY="31.0" onAction="#goBackButtonOnAction" prefHeight="36.0" prefWidth="76.0" style="-fx-background-color: Black;" text="&lt;&lt;&lt;" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
